@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .main-position {
+            transform: translateX(-40px);
+            /* transform: translateX(-40px) skewY(-20deg) scale(0.5); */
+        }
+
+        .main {
+            position: relative;
+            width: 99%;
+            height: 80vh;
+            margin-left: 15%;
+
+            border: 1px solid rgb(43, 0, 49);
+            background: linear-gradient(135deg, rgb(165, 0, 247), rgb(236, 0, 114));
+            transform-origin: top left;
+            transform: rotate(8deg) translate(-215px, 252px) scale(0.7) skew(47deg, -17deg);
+        }
+
+        .main:before {
+            content: '';
+            position: absolute;
+            top: -42.1%;
+            margin-left: -20px;
+            transform: skewX(-14deg) skewY(-59deg) rotate(-10deg);
+            transform-origin: bottom;
+            width: .87%;
+            height: 144%;
+            background: rgba(93, 57, 93, 0.956);
+            box-shadow: -89px -29px 201px 89px rgba(255, 255, 255, 0.54);
+            -webkit-box-shadow: -89px -29px 201px 89px rgba(255, 255, 255, 0.54);
+            -moz-box-shadow: -89px -29px 201px 89px rgba(255, 252, 255, 0.54);
+
+        }
+
+        .main:after {
+            content: '';
+            position: absolute;
+            margin-bottom: -27.8px;
+            height: 3.9%;
+            width: 100%;
+            background: linear-gradient(90deg, rgb(25, 43, 25), rgba(0, 0, 0, 0.745), rgba(236, 0, 114, 0.729), rgb(37, 3, 26));
+            bottom: 0px;
+            box-shadow: 12px 13px 50px black;
+            right: 11px;
+            transform-origin: right;
+            transform: skewX(-38deg) skewY(0deg);
+            box-shadow: 31px 138px 318px 139px rgba(255, 255, 255, 0.62);
+            -webkit-box-shadow: 31px 138px 318px 139px rgba(255, 255, 255, 0.62);
+            -moz-box-shadow: 31px 138px 318px 139px rgba(0, 0, 0, 0.62);
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-position">
+        <main class="main">
+
+        </main>
+
+    </div>
+
+
+</body>
+
+</html>
